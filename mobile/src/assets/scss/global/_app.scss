@@ -1,0 +1,191 @@
+#app.app-sobre {
+  position: relative;
+  overflow: auto;
+  &::before {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: #111111;
+  }
+}
+.app-sobre {
+  .app-main__logo::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+  }
+}
+.app {
+  &-menu {
+    &__btn {
+      position: fixed;
+      left: 20px;
+      top: 25px;
+      z-index: 9999;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      cursor: pointer;
+      -webkit-transition: 0.75s ease-in-out;
+      transition: 0.75s ease-in-out;
+      .app-menu-bar {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 80%;
+        background-color: #fff;
+        border-radius: 9px;
+        opacity: 1;
+        left: 10%;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        // -webkit-transition-delay: 0.25s;
+        // transition-delay: 0.25s;
+        &:nth-child(1) {
+          top: 15px;
+        }
+        &:nth-child(2) {
+          top: 25px;
+        }
+        &:nth-child(3) {
+          top: 35px;
+        }
+      }
+      &.active {
+        background-color: rgba(#ffffff, 0.1);
+        // -webkit-transform: translateX(240px);
+        // transform: translateX(240px);
+        left: 190px;
+        .app-menu-bar {
+          height: 2px;
+          width: 70%;
+          left: 15%;
+        }
+        .app-menu-bar:nth-child(1) {
+          top: 25px;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        .app-menu-bar:nth-child(2) {
+          opacity: 0;
+        }
+        .app-menu-bar:nth-child(3) {
+          top: 25px;
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  &-main {
+    &__logo {
+      position: absolute;
+      top: 135px;
+      right: 50%;
+      -webkit-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+      z-index: 30;
+      & > svg.app__logo {
+        -webkit-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+      }
+    }
+    &__title {
+      position: absolute;
+      right: 40px;
+      bottom: 140px;
+      z-index: 30;
+      opacity: 0.1;
+      -webkit-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  .app-main__logo {
+    &.top {
+      position: fixed;
+      top: 37px;
+      right: 26px;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      & > svg.app__logo {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
+  &.active {
+    .app-main__title {
+      right: 30px;
+    }
+  }
+
+  // SHAPES
+  &__square {
+    position: absolute;
+    width: 0%;
+    height: 182px;
+    left: 0;
+    top: 0;
+    // opacity: 0.95;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    background: #111;
+    z-index: 20;
+    -webkit-box-shadow: 20px 20px 99px #000000;
+    box-shadow: 20px 20px 99px #000000;
+    &.active {
+      width: 80%;
+    }
+  }
+  &__stripe {
+    position: absolute;
+    right: 0;
+    width: 76px;
+    height: 100vh;
+    background: #000;
+    opacity: 0.8;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    z-index: 20;
+    &.active {
+      width: 65px;
+    }
+  }
+}
+
+// .equipe__slider-img{
+//   .equipe__slider-name{
+//     opacity: 0;
+//   }
+//   &.current{
+//     transform: translate(0%,0%) scale(1);
+//     opacity: 1;
+//     z-index: 10;
+//     .equipe__slider-name{
+//       opacity: 1;
+//     }
+//   }
+
+//   &.next{
+//     transform: translate(50%,-50%) scale(0.8);
+//     opacity: .1;
+
+//   }
+
+//   &.othersPics{
+//     transform: translate(50%,-50%) scale(0.8);
+//     opacity: 0;
+
+//   }
+// }

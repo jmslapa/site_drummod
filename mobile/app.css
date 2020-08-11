@@ -1,0 +1,21 @@
+.index__frame {
+  background-image: url("dist/first.png") !important;
+  background-size: 100% !important;
+  background-position: center !important;
+}
+
+.sobre .main {
+  background-image: url("dist/sobre.png") !important;
+}
+
+.contato .map__image {
+  background-image: url("dist/maps.png") !important;
+}
+.equipe,
+.servicos {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+.contato .map__image .map__action::after {
+  content: url("dist/seta.svg") !important;
+}

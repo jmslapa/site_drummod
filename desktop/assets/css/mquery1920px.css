@@ -1,0 +1,88 @@
+/* (1920x1080) Full HD Display */
+@media screen and (min-width: 1920px) {
+  #nav_slider {
+    top: 81.4%;
+  }
+
+  #nav_slider_servicos {
+    top: 21% !important;
+  }
+
+  #second-photo {
+    margin-left: -6.5%;
+  }
+  #quemsomos_content {
+    margin-top: 10% !important;
+    margin-bottom: 5% !important;
+  }
+  #quemsomos_content p {
+    font-size: 15px;
+  }
+
+  .col-sobre p {
+    padding: 0 10%;
+  }
+  .col-sobre::after {
+    height: 50%;
+  }
+  #contato-header h3 {
+    font-family: "sirba-web", serif;
+    font-weight: 700;
+    font-size: 3.3em;
+    color: #caa574;
+  }
+
+  #contato-header b {
+    font-family: "sirba-web", serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #caa574;
+  }
+
+  #rodape-contatos {
+    margin-top: 4%;
+    font-size: 1em;
+  }
+
+  #btn-mapa {
+    top: 27%;
+    position: relative;
+    left: 0px;
+  }
+
+  #menu ul {
+    padding: 2.66%;
+  }
+
+  #linha-externa-contato {
+    margin-top: 16%;
+  }
+
+  #linha_sobre_1 {
+    background-color: rgb(255, 255, 255);
+    width: 0.1%;
+    height: 11.5%;
+    position: absolute;
+    left: 32%;
+    top: 105vh;
+    opacity: 0;
+  }
+  #linha_sobre_2 {
+    background-color: rgb(255, 255, 255);
+    width: 0.1%;
+    height: 8.5%;
+    position: absolute;
+    left: 50%;
+    top: 105vh;
+    opacity: 0.5;
+  }
+  #linha_sobre_3 {
+    background-color: rgb(255, 255, 255);
+    width: 0.1%;
+    height: 11.5%;
+    position: absolute;
+    left: 66%;
+    top: 104vh;
+    opacity: 0.5;
+  }
+}

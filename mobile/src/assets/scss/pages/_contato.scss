@@ -1,0 +1,228 @@
+// Variables
+$border: 2px solid #393b41;
+$color-titles: #caa574;
+$white: rgba(254, 255, 250, 1);
+$matrix: "matrix-ii";
+$gray-form: #393b41;
+$gray: #9c9c9d;
+
+.contato {
+  .map__image {
+    background-image: url("./assets/images/maps.png");
+    min-height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    .map__action {
+      margin: 0 30px;
+      position: absolute;
+      top: 23%;
+      > a {
+        font-weight: 300;
+      }
+      &:after {
+        content: url("./assets/images/seta.svg");
+        padding-left: 10px;
+        vertical-align: sub;
+      }
+    }
+    .map__info {
+      background-color: #222222;
+      padding: 30px;
+      margin: 0 30px;
+      position: absolute;
+      top: 28%;
+      font-family: sans-serif;
+      .font-info {
+        color: $color-titles;
+        font-weight: 700;
+      }
+      .map__tel {
+        @extend .font-info;
+        font-size: 1.8rem;
+      }
+      .map__email {
+        @extend .font-info;
+        font-size: 1.04rem;
+      }
+    }
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-top: 90px;
+
+    .form__textarea {
+      width: 80%;
+
+      .form__item {
+        width: 100%;
+      }
+    }
+
+    .form__item {
+      display: block;
+      width: 80%;
+      > input {
+        border-bottom: 2px solid $gray-form;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: transparent;
+        border-radius: 0;
+        padding: 0.6rem 0;
+        font-size: 1rem;
+        margin-bottom: 0.8em;
+        width: 100%;
+      }
+      textarea {
+        display: block;
+        width: 100%;
+        background: transparent;
+        border-color: $gray-form;
+        border-top: none;
+        border-width: 2px;
+      }
+      > label {
+        display: block;
+        border-bottom: 2px solid $gray-form;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: transparent;
+        border-radius: 0;
+        padding: 0.6rem 0;
+        font-size: 1rem;
+        width: 100%;
+        color: $gray;
+      }
+
+      .form__textareabtn {
+        width: 75%;
+
+        > button img {
+          width: 28%;
+        }
+      }
+    }
+
+    ::-webkit-input-placeholder {
+      color: $gray;
+    }
+
+    :-moz-placeholder {
+      /* Firefox 18- */
+      color: $gray;
+    }
+
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $gray;
+    }
+
+    :-ms-input-placeholder {
+      color: $gray;
+    }
+
+    .enviar-form {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: $color-titles;
+      border: none;
+      float: right;
+      margin-top: -20px;
+      margin-right: -20px;
+    }
+  }
+
+  .modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    .modal__container {
+      background-color: $white;
+      width: 60%;
+      min-width: 300px;
+      position: relative;
+
+      .modal--fechar {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 4px solid $white;
+        background-color: $color-titles;
+        font-size: 1.2em;
+        -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+      }
+
+      @-webkit-keyframes modal__container {
+        from {
+          opacity: 0;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes modal__container {
+        from {
+          opacity: 0;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .modal--mostrar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    .modal__container {
+      -webkit-animation: modal__container 0.3s;
+      animation: modal__container 0.3s;
+    }
+  }
+
+  // .mostrar .modal__container {
+
+  // }
+}

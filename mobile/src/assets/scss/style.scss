@@ -1,0 +1,13 @@
+@import "global/reset";
+@import "global/app";
+@import "global/typography";
+@import "global/mixins";
+@import "global/animation";
+// COMPONENTS
+@import "components/sidebar";
+//PAGES
+@import "pages/index";
+@import "pages/sobre";
+@import "pages/servicos";
+@import "pages/equipe";
+@import "pages/contato";

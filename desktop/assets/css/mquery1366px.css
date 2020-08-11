@@ -1,0 +1,297 @@
+/* (1366x768) WXGA Display */
+@media screen and (min-width: 1366px) {
+  img#imagem-servicos {
+    width: 48%;
+    position: absolute;
+    float: right;
+    top: 71%;
+    left: 52%;
+    z-index: 1111;
+  }
+
+  #servicos-text-content h3 {
+    margin-left: -6% !important;
+  }
+
+  #quemsomos_content p {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+  }
+
+  #valores_content {
+    top: 6%;
+  }
+
+  #valores_content p {
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 12px;
+  }
+
+  #valores_content ul {
+    padding: 15px;
+    padding-left: 15px;
+    padding-left: 15px;
+    list-style: disc;
+    padding-left: 51px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  #text-content h3 {
+    font-size: 4em;
+    color: #caa574;
+    width: 30%;
+    font-weight: bold;
+  }
+
+  #text-content p {
+    line-height: 126%;
+    font-size: 79%;
+  }
+
+  #text-content {
+    padding: 0%;
+    position: relative;
+    left: 55%;
+    top: 7%;
+  }
+
+  #nav_indicador {
+    width: calc(100% + 100px);
+    padding: 7%;
+    position: relative;
+    top: 0%;
+    border: none;
+    border-bottom: solid 0.5px rgba(255, 255, 255, 0.5);
+    border-right: solid 0.5px rgba(255, 255, 255, 0.5);
+    height: 21%;
+  }
+
+  #menu-empresas {
+    position: fixed;
+    width: 100%;
+    /* top: 78%!important; */
+  }
+
+  #nomes_colaboradores {
+    position: absolute;
+    left: 47%;
+    top: 5%;
+    width: 38%;
+  }
+
+  #foto1 {
+    width: 45%;
+    position: absolute;
+    top: -14%;
+    z-index: 100;
+    left: -0.1%;
+  }
+
+  #slider-content {
+    width: 100%;
+    border: none;
+    border-left: solid 0.5px rgba(255, 255, 255, 0.5);
+    height: 74vh;
+    border-top: solid 0.5px rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: 18%;
+  }
+
+  #nav_slider {
+    /* background: url(../imagens/bg_nav.svg); */
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    z-index: 101;
+    left: 40%;
+    top: 77.4% !important;
+  }
+
+  #fotos-contador {
+    position: absolute;
+    top: 89%;
+    left: 6%;
+    right: 0%;
+    bottom: 0%;
+    font-size: 3em;
+  }
+
+  .texto-inicio-content {
+    float: left;
+    text-align: left;
+    padding: 10%;
+    margin-top: -12%;
+    margin-bottom: -12%;
+    padding-top: 5%;
+  }
+
+  .btn-content {
+    padding-top: 8%;
+  }
+
+  .texto-inicio-content p {
+    width: 100%;
+    font-size: smaller;
+    padding-left: 7%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 15px;
+  }
+
+  #divSecundaria-serv {
+    width: 72%;
+    height: 100vh;
+    border-right: solid;
+    border-top: solid;
+    margin-top: 31.9%;
+    margin-left: -7%;
+    z-index: 1001;
+    border-color: white;
+    border-width: thin;
+    float: left;
+  }
+
+  /* #second-photo {
+      width: 300px;
+      height: 90vh;
+      float: right;
+      margin-left: -7.5% !important;
+      border-right: solid 0.5px rgba(255, 255, 255, 0.5);
+      border-top: solid 0.5px rgba(255, 255, 255, 0.5);
+    } */
+
+  #nav_slider_servicos {
+    /* background: url(../imagens/bg_nav.svg); */
+    width: 100px;
+    height: 44px;
+    position: fixed;
+    z-index: 1010;
+    left: 61vw;
+    top: 21%;
+  }
+
+  #equipe p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  #contato-card {
+    background: #242424;
+    padding: 0;
+    margin: 0;
+    padding: 57px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -7%;
+  }
+
+  .contato-form-campo:focus {
+    background: none;
+  }
+
+  #contato-header h3 {
+    font-family: "sirba-web", serif;
+    font-weight: 700;
+    font-size: 3.3em;
+    color: #caa574;
+  }
+
+  #contato-header b {
+    font-family: "sirba-web", serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #caa574;
+  }
+
+  #contato-topo {
+    background-color: #0e0e0e;
+    background-image: url(../imagens/Efeito.png);
+    background-size: cover;
+    height: 240px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  #logo-drummond {
+    width: 73.8%;
+    margin-left: -21%;
+    float: left;
+    height: 23%;
+    background: #fff;
+    text-align: center;
+    padding: 7%;
+    padding-left: 6%;
+  }
+
+  #linha-externa-contato {
+    width: 300%;
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    border: none;
+    border-top: solid 0.5px rgba(255, 255, 255, 0.5);
+    border-left: solid 0.5px rgba(255, 255, 255, 0.5);
+    margin-top: 13% !important;
+    margin-left: -59%;
+    float: left;
+  }
+
+  #rodape-contatos {
+    width: 65%;
+    text-align: right;
+    margin-top: 5%;
+    color: #caa574;
+    font-size: 1em;
+  }
+
+  #row-rodape-contato {
+    height: 100%;
+    margin-top: 0.5%;
+  }
+
+  #btn-mapa {
+    position: fixed;
+    top: 19% !important;
+    left: 17%;
+  }
+
+  #menu ul {
+    padding: 2.5% !important;
+  }
+
+  #linha_sobre_1 {
+    background-color: rgb(255, 255, 255);
+    width: 0.1%;
+    height: 11.5%;
+    position: absolute;
+    left: 32%;
+    top: 103.3vh;
+    opacity: 0 !important;
+  }
+  #linha_sobre_2 {
+    background-color: rgb(255, 255, 255);
+    width: 0.1%;
+    height: 8.5%;
+    position: absolute;
+    left: 50%;
+    top: 103.3vh;
+    opacity: 0 !important;
+  }
+  #linha_sobre_3 {
+    background-color: rgb(255, 255, 255);
+    width: 0.1%;
+    height: 11.5%;
+    position: absolute;
+    left: 66%;
+    top: 102vh;
+    opacity: 0 !important;
+  }
+}

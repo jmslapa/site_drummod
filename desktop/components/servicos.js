@@ -9,7 +9,7 @@ Vue.component("servicos", {
 
            <div class="col-4" id="slider-servicos-content">
                 
-                <div id="fist-photo" data-title="Assessoria Empresarial" data-description="123Assessoria nas áreas financeira, administrativa, folha de pagamento, controladoria/contabilidade, jurídica, pesquisas, suprimentos e compliance através de profissionais com ampla experiência em suas áreas de atuação e da utilização das melhores práticas de mercado."></div>
+                <div id="fist-photo" data-title="Assessoria Empresarial" data-description="Assessoria nas áreas financeira, administrativa, folha de pagamento, controladoria/contabilidade, jurídica, pesquisas, suprimentos e compliance através de profissionais com ampla experiência em suas áreas de atuação e da utilização das melhores práticas de mercado."></div>
                
                 <div id="second-photo" data-title="Contact Center" data-description="Serviço prestado para nichos específicos de mercado através de um atendimento de excelência com uma variedade de canais que potencializam o desempenho dos recursos humanos com aplicação de soluções tecnológicas e proporcionam a melhor interação entre empresa e consumidor."></div>
                 
@@ -19,7 +19,8 @@ Vue.component("servicos", {
                 
                 <div id="fifth-photo" data-title="Trade Marketing" data-description="Equipe de abragência nacional especializada em estratégias de maximização  de proposta de valor do produto ou serviço personalizada de acordo com cada negócio através de pesquisa, monitorias para controle de qualidade e merchandising."></div>
                 
-                <div id="sixth-photo" data-title="Investimento Imobiliário:" data-description="Aplicação de recursos em diversos tipos de investimentos imobiliários, seja no desenvolvimento de empreendimentos ou em imóveis já prontos, como edifícios comerciais, visando o retorno pela exploração de locação, arrendamento, venda do imóvel e demais atividades do setor."></div>
+                <div id="sixth-photo" data-title="Investimento Imobiliário:" data-description="Aquisição de imóveis com ou sem geração imediata de renda, incluindo terrenos para projetos de desenvolvimento e para projetos Built To Suit, bem como imóveis com contrato vigente de locação."
+                data-subtitle="Built to Suit" secondary-data-description="Desenvolvimento e construção de empreendimentos sob medida para atender as necessidades específicas dos clientes por meio de contratos de locação de longo prazo. Empregamos capital próprio para a aquisição e construção do imóvel."></div>
 
                 <div id="nav_slider_servicos">
                 <div id="background-setas">
@@ -28,7 +29,9 @@ Vue.component("servicos", {
                 </div>
                 <div id="servicos-text-content">
                      <h3 id="servicos-text-titulo">{{title}}</h3>
-                     <p id="servicos-text-descricao">{{description}}</p>
+                     <p id="servicos-text-descricao">{{description}}</p>                     
+                     <h3 id="servicos-text-subtitulo">{{subtitle}}</h3>                     
+                     <p id="servicos-text-descricao-secundaria">{{secondary}}</p>
                 </div>
 
             </div>
@@ -42,7 +45,9 @@ Vue.component("servicos", {
   data() {
     return {
       title: "",
+      subtitle: "",
       description: "",
+      secondary: "",
       services: [
         "#fist-photo",
         "#second-photo",
@@ -109,6 +114,13 @@ Vue.component("servicos", {
             onStart: () => {
               this.title = elementNext.getAttribute("data-title");
               this.description = elementNext.getAttribute("data-description");
+              this.secondary = elementNext.getAttribute("secondary-data-description");
+              this.subtitle = elementNext.getAttribute("data-subtitle");
+              if(elementNext.getAttribute('id') == 'sixth-photo') {
+                document.getElementById('servicos-text-content').className = 'multiple-content';
+              }else {
+                document.getElementById('servicos-text-content').className = '';
+              }
             }
           },
           "-=1"
@@ -161,6 +173,13 @@ Vue.component("servicos", {
             onStart: () => {
               this.title = elementPrev.getAttribute("data-title");
               this.description = elementPrev.getAttribute("data-description");
+              this.secondary = elementPrev.getAttribute("secondary-data-description");
+              this.subtitle = elementPrev.getAttribute("data-subtitle");
+              if(elementPrev.getAttribute('id') == 'sixth-photo') {
+                document.getElementById('servicos-text-content').className = 'multiple-content';
+              }else {
+                document.getElementById('servicos-text-content').className = '';
+              }
             }
           },
           "-=1"
@@ -184,5 +203,7 @@ Vue.component("servicos", {
 
     this.title = el.getAttribute("data-title");
     this.description = el.getAttribute("data-description");
+    this.secondary = el.getAttribute("secondary-data-description");
+    this.subtitle = el.getAttribute("data-subtitle");
   }
 });

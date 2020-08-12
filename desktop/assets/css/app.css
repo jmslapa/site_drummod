@@ -491,6 +491,20 @@ html {
   margin-top: 51%;
 }
 
+#servicos-text-content.multiple-content h3 {
+  font-size: 3em;  
+  width: 250px;
+  margin-top: 10%;
+  margin-left: -26%;
+  color: #caa574;
+}
+
+#servicos-text-content.multiple-content p {
+  width: 220px;
+  margin-left: 67%;
+  margin-top: 15%;
+}
+
 .setas {
   width: 46.41px;
   height: 35px;

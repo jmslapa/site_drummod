@@ -107,12 +107,6 @@ export default {
           level: "Coordenador de Suprimentos"
         },
         {
-          id: "img10",
-          source: "./src/assets/images/equipe/10-Bianca.png",
-          name: "Bianca Gomes",
-          level: "Coordenadora Contábil"
-        },
-        {
           id: "img12",
           source: "./src/assets/images/equipe/11-GabrielD.png",
           name: "Gabriel Drummond",

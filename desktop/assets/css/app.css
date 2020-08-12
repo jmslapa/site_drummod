@@ -5,8 +5,6 @@
   overflow: hidden;
 }
 
-html {
-}
 
 #background {
   width: 100%;
@@ -454,9 +452,9 @@ html {
 
 #servicos h3#servico-titulo {
   font-family: "matrix-ii";
-  /*font-weight: 700;*/  
+  margin-top: 25%;  
   font-size: 35px; 
-  color: #fff;
+  color: #f5c98f;
   position: absolute;
 }
 
@@ -749,7 +747,7 @@ html {
 #servicos p#servico-desc {
   position: absolute;
   z-index: 10;
-  margin-top: 15%;
+  margin-top: 30%;
   margin-left: 15%;
   font-size: 20px;
   font-family: "Montserrat";

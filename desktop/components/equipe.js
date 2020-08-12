@@ -41,7 +41,7 @@ Vue.component("equipe", {
 
                         <li><img id="foto10" data-nome="Robson Santos" data-cargo="Coordenador de Suprimentos" class="fotos" src="assets/imagens/equipe/Robson.png"></li>
 
-                        <li><img id="foto11" data-nome="Bianca Gomes" data-cargo="Coordenadora Contábil" class="fotos" src="assets/imagens/equipe/Bianca.png"></li>
+                        <!--<li><img id="foto11" data-nome="Bianca Gomes" data-cargo="Coordenadora Contábil" class="fotos" src="assets/imagens/equipe/Bianca.png"></li>-->
                      </ul>
                  </div>
 

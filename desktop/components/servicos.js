@@ -114,12 +114,14 @@ Vue.component("servicos", {
             onStart: () => {
               this.title = elementNext.getAttribute("data-title");
               this.description = elementNext.getAttribute("data-description");
-              this.secondary = elementNext.getAttribute("secondary-data-description");
-              this.subtitle = elementNext.getAttribute("data-subtitle");
               if(elementNext.getAttribute('id') == 'sixth-photo') {
                 document.getElementById('servicos-text-content').className = 'multiple-content';
+                this.secondary = elementNext.getAttribute("secondary-data-description");
+                this.subtitle = elementNext.getAttribute("data-subtitle");
               }else {
                 document.getElementById('servicos-text-content').className = '';
+                this.secondary = '';
+                this.subtitle = '';
               }
             }
           },
@@ -173,12 +175,14 @@ Vue.component("servicos", {
             onStart: () => {
               this.title = elementPrev.getAttribute("data-title");
               this.description = elementPrev.getAttribute("data-description");
-              this.secondary = elementPrev.getAttribute("secondary-data-description");
-              this.subtitle = elementPrev.getAttribute("data-subtitle");
               if(elementPrev.getAttribute('id') == 'sixth-photo') {
                 document.getElementById('servicos-text-content').className = 'multiple-content';
+                this.secondary = elementPrev.getAttribute("secondary-data-description");
+                this.subtitle = elementPrev.getAttribute("data-subtitle");
               }else {
                 document.getElementById('servicos-text-content').className = '';
+                this.secondary = '';
+                this.subtitle = '';
               }
             }
           },

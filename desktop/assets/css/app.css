@@ -454,7 +454,10 @@ html {
 
 #servicos h3#servico-titulo {
   font-family: "matrix-ii";
-  font-weight: 700;
+  /*font-weight: 700;*/  
+  font-size: 35px; 
+  color: #fff;
+  position: absolute;
 }
 
 #nav_slider,
@@ -480,7 +483,8 @@ html {
 
 #servicos-text-content h3 {
   font-size: 3em;
-  margin-top: 23%;
+  /*margin-top: 23%;*/
+  margin-top: 50%;
   margin-left: -26%;
   color: #caa574;
 }
@@ -730,9 +734,26 @@ html {
   position: absolute;
   z-index: 10;
   float: left;
+  /*
   margin-left: 15%;
   margin-top: 20%;
   font-size: 67px;
+  */
+  margin-left: 0%;
+  margin-top: 10%;
+  font-size: 2px;
+  font-weight: bold;
+  font-family: "matrix-ii";
+}
+
+#servicos p#servico-desc {
+  position: absolute;
+  z-index: 10;
+  margin-top: 15%;
+  margin-left: 15%;
+  font-size: 20px;
+  font-family: "Montserrat";
+  
 }
 
 #contato {

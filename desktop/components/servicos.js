@@ -3,17 +3,21 @@ Vue.component("servicos", {
     <div id="servicos" class="conteiner-fluid">
 
        <div class="row" id="row-servicos">
-           <div class="col-8" id="fist-foto-col">
-               <h3 id="servico-titulo">O que <br>fazemos</h3>
-           </div>
+          <div class="col-8" id="fist-foto-col">
+              <h3 id="servico-titulo">Participações Societárias</h3>
+
+              <p style="width: 60%" id="servico-desc">“Societário” – financeiro, educação, serviços,
+              tecnologia e imobiliário: Participação em sociedades de diversos setores,
+              incluindo contact center e desenvolvimento de softwares.</p>
+          </div>
 
            <div class="col-4" id="slider-servicos-content">
                 
                 <div id="fist-photo" data-title="Assessoria Empresarial" data-description="Assessoria nas áreas financeira, administrativa, folha de pagamento, controladoria/contabilidade, jurídica, pesquisas, suprimentos e compliance através de profissionais com ampla experiência em suas áreas de atuação e da utilização das melhores práticas de mercado."></div>
                
                 <div id="second-photo" data-title="Contact Center" data-description="Serviço prestado para nichos específicos de mercado através de um atendimento de excelência com uma variedade de canais que potencializam o desempenho dos recursos humanos com aplicação de soluções tecnológicas e proporcionam a melhor interação entre empresa e consumidor."></div>
-                
-                <div id="third-photo" data-title="Participações Societárias" data-description="Participação em sociedades de diversos setores, incluindo contact center e desenvolvimento de softwares."></div>
+              
+                <!--<div id="third-photo" data-title="Participações Societárias" data-description=" “Societário” – financeiro, educação, serviços, tecnologia e imobiliário: Participação em sociedades de diversos setores, incluindo contact center e desenvolvimento de softwares."></div>-->
                
                 <div id="fourth-photo" data-title="Educação" data-description="Sistema de educação superior a distância credenciado pelas principais redes de ensino do país, nacionais e internacionais, além de gerenciamento de treinamentos de capacitação de equipes e profissionais para o aperfeiçoamento dos serviços prestados."></div>
                 
@@ -51,7 +55,7 @@ Vue.component("servicos", {
       services: [
         "#fist-photo",
         "#second-photo",
-        "#third-photo",
+        //"#third-photo",
         "#fourth-photo",
         "#fifth-photo",
         "#sixth-photo"
@@ -61,7 +65,7 @@ Vue.component("servicos", {
     };
   },
   methods: {
-    servicesNavigate: function(direction) {
+    servicesNavigate: function (direction) {
       if (this.delay) return;
       this.delay = true;
       setTimeout(() => {
@@ -114,11 +118,11 @@ Vue.component("servicos", {
             onStart: () => {
               this.title = elementNext.getAttribute("data-title");
               this.description = elementNext.getAttribute("data-description");
-              if(elementNext.getAttribute('id') == 'sixth-photo') {
+              if (elementNext.getAttribute('id') == 'sixth-photo') {
                 document.getElementById('servicos-text-content').className = 'multiple-content';
                 this.secondary = elementNext.getAttribute("secondary-data-description");
                 this.subtitle = elementNext.getAttribute("data-subtitle");
-              }else {
+              } else {
                 document.getElementById('servicos-text-content').className = '';
                 this.secondary = '';
                 this.subtitle = '';
@@ -175,11 +179,11 @@ Vue.component("servicos", {
             onStart: () => {
               this.title = elementPrev.getAttribute("data-title");
               this.description = elementPrev.getAttribute("data-description");
-              if(elementPrev.getAttribute('id') == 'sixth-photo') {
+              if (elementPrev.getAttribute('id') == 'sixth-photo') {
                 document.getElementById('servicos-text-content').className = 'multiple-content';
                 this.secondary = elementPrev.getAttribute("secondary-data-description");
                 this.subtitle = elementPrev.getAttribute("data-subtitle");
-              }else {
+              } else {
                 document.getElementById('servicos-text-content').className = '';
                 this.secondary = '';
                 this.subtitle = '';
@@ -195,7 +199,7 @@ Vue.component("servicos", {
       }
     }
   },
-  mounted: function() {
+  mounted: function () {
     let el = document.querySelector("#fist-photo");
     TweenMax.set(el, {
       width: "65.5vw",

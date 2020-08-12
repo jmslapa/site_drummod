@@ -323,7 +323,8 @@ Vue.component("navegacao",{
            var background = document.getElementById("bloco-movel");
            var ServicoTitulo = document.getElementById("servico-titulo");
            var ServicoTextTitulo = document.getElementById("servicos-text-titulo");
-           var ServicoTextDescricao = document.getElementById("servicos-text-descricao")
+           var ServicoTextDescricao = document.getElementById("servicos-text-descricao")           
+           var ServicoTextDescricaoSecundaria = document.getElementById("servicos-text-descricao-secundaria")
 
            if(screen.availWidth >= 1536){
                TweenMax.to(nav_indicador,1,{
@@ -389,6 +390,8 @@ Vue.component("navegacao",{
                marginLeft:"81%"
            },"-=1").to(ServicoTextDescricao,1,{
                marginLeft:"122%"
+           },"-=1").to(ServicoTextDescricaoSecundaria,1,{
+               marginLeft:"122%"
            },"-=1");;
         },
         animacaoServicos:function()
@@ -434,10 +437,13 @@ Vue.component("navegacao",{
 
            var ServicoTextDescricao = document.getElementById("servicos-text-descricao");
 
+           var ServicoTextDescricaoSecundaria = document.getElementById("servicos-text-descricao-secundaria");
+
           //CONFIGURACOES DE ALGUNS ELEMENTOS
           $("#"+ServicoTitulo.id).css("margin-left","40%");
           $("#"+ServicoTextTitulo.id).css("margin-left","40%");
-          $("#"+ServicoTextDescricao.id).css("margin-left","122%");
+          $("#"+ServicoTextDescricao.id).css("margin-left","122%");          
+          $("#"+ServicoTextDescricaoSecundaria.id).css("margin-left","122%");
           $("#servicos").css("display","block");
 
           var linha_externa = document.getElementById("linha_externa");
@@ -471,6 +477,8 @@ Vue.component("navegacao",{
            },"-=1").to(ServicoTextTitulo,1,{
                marginLeft:"-26%"
            },"-=1").to(ServicoTextDescricao,1,{
+               marginLeft:"67%"
+           },"-=1").to(ServicoTextDescricaoSecundaria,1,{
                marginLeft:"67%"
            },"-=1").to(Servicos,1,{
                opacity:1,

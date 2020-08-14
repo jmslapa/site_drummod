@@ -3,13 +3,14 @@ Vue.component("servicos", {
     <div id="servicos" class="conteiner-fluid">
 
        <div class="row" id="row-servicos">
-          <div class="col-8" id="fist-foto-col">
-              
-              <h3 id="servico-titulo">Participações Societárias</h3>
+       <div class="col-8" id="fist-foto-col">
+        
+            <h3 id="servico-titulo">O que fazemos</h3>
+            <h2 id="servico-subtitulo">Participações Societárias</h2>
 
-              <p style="width: 60%" id="servico-desc"> Participação em sociedades de diversos setores,
-              incluindo contact center, financeiro, educação, serviços, tecnologia e imobiliário e desenvolvimento de softwares.</p>
-          </div>
+            <p style="width: 60%" id="servico-desc"> Participação em sociedades de diversos setores,
+            incluindo contact center, financeiro, educação, serviços, tecnologia e imobiliário e desenvolvimento de softwares.</p>
+        </div>
 
            <div class="col-4" id="slider-servicos-content">
                 

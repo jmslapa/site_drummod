@@ -5,7 +5,35 @@
   overflow: hidden;
 }
 
-
+/*---------------------------------titulo-----------------------------------*/
+#servicos h3#servico-titulo {
+  font-family: "matrix-ii";
+  margin-top: 15%;  
+  font-size: 50px; 
+  color: #ffff;
+  position: absolute;
+}
+/*---------------------------------subTitulo-----------------------------------*/
+#servicos h2#servico-subtitulo {
+  font-family: "matrix-ii";
+  margin-top: 25%;  
+  font-size: 35px; 
+  margin-left: 15%;
+  color: #caa574;
+  position: absolute;
+  font-weight: bold;
+  z-index: 100;
+}
+/*----------------------------------descrição-----------------------------------*/
+#servicos p#servico-desc {
+  position: absolute;
+  z-index: 10;
+  margin-top: 30%;
+  margin-left: 15%;
+  font-size: 20px;
+  font-family: "Montserrat";
+  
+}
 #background {
   width: 100%;
   height: 100vh;
@@ -450,14 +478,6 @@
   font-size: 79%;
 }
 
-#servicos h3#servico-titulo {
-  font-family: "matrix-ii";
-  margin-top: 25%;  
-  font-size: 35px; 
-  color: #f5c98f;
-  position: absolute;
-}
-
 #nav_slider,
 #nav_slider_servicos {
   /* background: url(../imagens/bg_nav.svg); */
@@ -742,16 +762,6 @@
   font-size: 2px;
   font-weight: bold;
   font-family: "matrix-ii";
-}
-
-#servicos p#servico-desc {
-  position: absolute;
-  z-index: 10;
-  margin-top: 30%;
-  margin-left: 15%;
-  font-size: 20px;
-  font-family: "Montserrat";
-  
 }
 
 #contato {

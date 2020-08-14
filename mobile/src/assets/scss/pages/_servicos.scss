@@ -6,7 +6,7 @@
     position: absolute;
     top: 12%;
     left: 10%;
-    width: 155px;    
+    color: #fff;
     font-size: 30px;
     font-weight: bold;
     line-height: 41px;
@@ -14,20 +14,36 @@
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
     line-height: 100%;
-
-  }
-
-  & > .titulo{
-    position: absolute;
-    font-size: 0.75em;
-    margin-top: 38%;
-    margin-left: 10%;
-    line-height: 15px;
-    color: #fff;     
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
     
   }
+/*--------------------------descrição-------------------------------*/
+  & > .titulo-desc{
+    position: absolute;
+    font-size: 12px;
+    margin-top: 40%;
+    margin-left: 10%;
+    line-height: 15px;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;  
+    
+  }
+/*-----------------------titulo------------------------------------*/
+  & > .titulo{
+    position: absolute;
+    font-size: 17px;
+    margin-top: 33%;
+    margin-left: 10%;
+    line-height: 15px;
+    color: #caa574;
+    font-weight: bold;
+    z-index: 100;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;  
+    
+  }
+
+
 
   &__slider {
     position: relative;

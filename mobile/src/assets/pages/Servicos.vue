@@ -1,8 +1,9 @@
 <template>
-  <section id="servicos" class="servicos is-page">
-    <h1 class="page__title animated fadeInDown" :style="{color:titleColor}">{{page.frontTitle}}</h1>
-    
-    <p class="titulo animated fadeInDown" :style="{color:subtitleColor}">{{page.title}}</p>
+    <section id="servicos" class="servicos is-page">
+    <h1 class="page__title animated fadeInDown">{{page.frontTitle}}</h1>
+
+    <p class="titulo animated fadeInDown">{{page.title}}</p>  
+    <p class="titulo-desc animated fadeInDown">{{page.desc}}</p>
     
     <div class="servicos__slider animated fadeIn slow">
       <div class="servicos__slider-img" v-for="img in gallery" :key="img.id" :id="img.id">
@@ -40,12 +41,11 @@
 export default {
   data() {
     return {
-      titleColor: "#caa574",
-      subtitleColor: "#fff",
-      page: {
+       page: {
         name: "servicos",
-        frontTitle: "Participações Societárias",
-        title:
+        frontTitle: "O que fazemos",
+        title: "Participações Societárias",
+        desc:
             "Participação em sociedades de diversos setores,incluindo contact center, financeiro, educação, serviços, tecnologia e imobiliário e desenvolvimento de softwares."
       },
       gallery: [

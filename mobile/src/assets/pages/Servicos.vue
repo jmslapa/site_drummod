@@ -1,9 +1,9 @@
 <template>
     <section id="servicos" class="servicos is-page">
-    <h1 class="page__title animated fadeInDown">{{page.frontTitle}}</h1>
+    <h1 :style="{color: subtitleColor}" class="page__title animated fadeInDown">{{page.frontTitle}}</h1>
 
-    <p class="titulo animated fadeInDown">{{page.title}}</p>  
-    <p class="titulo-desc animated fadeInDown">{{page.desc}}</p>
+    <p :style="{color: titleColor}" class="titulo animated fadeInDown">{{page.title}}</p>  
+    <p :style="{color: subtitleColor}" class="titulo-desc animated fadeInDown">{{page.desc}}</p>
     
     <div class="servicos__slider animated fadeIn slow">
       <div class="servicos__slider-img" v-for="img in gallery" :key="img.id" :id="img.id">
@@ -108,7 +108,9 @@ export default {
       currentService: 0,
       nextService: 0,
       previuesService: 0,
-      countService: 0
+      countService: 0,
+      titleColor: "#caa574",
+      subtitleColor: "#fff", 
     };
   },
   methods: {
@@ -200,7 +202,7 @@ export default {
     let scrollOffset = 0;
     let screen = document.querySelector("#app");
     screen.addEventListener("touchstart", e => {
-      startY = e.changedTouches[0].clientY;
+      //startY = e.changedTouches[0].clientY;
     });
     screen.addEventListener("touchend", e => {
       endY = e.changedTouches[0].clientY;

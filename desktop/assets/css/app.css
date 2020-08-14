@@ -449,34 +449,13 @@
   line-height: 20px;
   font-size: 79%;
 }
-/*---------------------------------titulo-----------------------------------*/
+
 #servicos h3#servico-titulo {
-  font-family: "matrix-ii";
-  margin-top: 15%;  
-  font-size: 50px; 
-  color: #ffff;
-  position: absolute;
-}
-/*---------------------------------subTitulo-----------------------------------*/
-#servicos h2#servico-subtitulo {
   font-family: "matrix-ii";
   margin-top: 25%;  
   font-size: 35px; 
-  margin-left: 15%;
-  color: #caa574;
+  color: #f5c98f;
   position: absolute;
-  font-weight: bold;
-  z-index: 100;
-}
-/*----------------------------------descrição-----------------------------------*/
-#servicos p#servico-desc {
-  position: absolute;
-  z-index: 10;
-  margin-top: 30%;
-  margin-left: 15%;
-  font-size: 20px;
-  font-family: "Montserrat";
-  
 }
 
 #nav_slider,
@@ -763,6 +742,16 @@
   font-size: 2px;
   font-weight: bold;
   font-family: "matrix-ii";
+}
+
+#servicos p#servico-desc {
+  position: absolute;
+  z-index: 10;
+  margin-top: 30%;
+  margin-left: 15%;
+  font-size: 20px;
+  font-family: "Montserrat";
+  
 }
 
 #contato {

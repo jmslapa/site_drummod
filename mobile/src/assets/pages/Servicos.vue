@@ -1,14 +1,15 @@
 <template>
   <section id="servicos" class="servicos is-page">
-    <h1 class="page__title animated fadeInDown" :style="{color:titleColor}">{{page.frontTitle}}</h1>
-    
-    <p class="titulo animated fadeInDown" :style="{color:subtitleColor}">{{page.title}}</p>
-    
+    <h1 class="page__title animated fadeInDown">{{page.frontTitle}}</h1>
+
+    <p class="titulo animated fadeInDown">{{page.title}}</p>  
+    <p class="titulo-desc animated fadeInDown">{{page.desc}}</p>
+
     <div class="servicos__slider animated fadeIn slow">
       <div class="servicos__slider-img" v-for="img in gallery" :key="img.id" :id="img.id">
         <h3 class="servicos__slider-title tk-matrix-ii">{{img.title}}</h3>
         <div class="servicos__slider-extra">
-          <img :src="img.source" alt v-bind:class="hasMultipleText(true)" />
+          <img :src="img.source" alt class="servicos__slider-pic" />
           <div class="servicos__slider-arrows">
             <span class="arrow arrow--left" v-on:click="arrowPreviues">
               <i class="fas fa-chevron-left"></i>
@@ -18,11 +19,7 @@
             </span>
           </div>
         </div>
-        <div v-bind:class="hasMultipleText(false)">
-          <p>{{img.text}}</p>
-          <h3 class="servicos__slider-subtitle tk-matrix-ii">{{img.subtitle}}</h3>
-          <p class="servicos__slider-secondary-text">{{img.secondaryText}}</p>
-        </div>
+        <p class="servicos__slider-text">{{img.text}}</p>
       </div>
     </div>
     <!-- <div class="servicos__slider-arrows">
@@ -40,12 +37,11 @@
 export default {
   data() {
     return {
-      titleColor: "#caa574",
-      subtitleColor: "#fff",
       page: {
         name: "servicos",
-        frontTitle: "Participações Societárias",
-        title:
+        frontTitle: "O que fazemos",
+        title: "Participações Societárias",
+        desc:
             "Participação em sociedades de diversos setores,incluindo contact center, financeiro, educação, serviços, tecnologia e imobiliário e desenvolvimento de softwares."
       },
       gallery: [
@@ -63,13 +59,7 @@ export default {
           text:
             "Serviço prestado para nichos específicos de mercado através de um atendimento de excelência com uma variedade de canais que potencializam o desempenho dos recursos humanos com aplicação de soluções tecnológicas e proporcionam a melhor interação entre empresa e consumidor."
         },
-        // {
-        //   id: "img3",
-        //   source: "./src/assets/images/servicos/03.png",
-        //   title: "Participações Societárias",
-        //   text:
-        //     "  Participação em sociedades de diversos setores, incluindo contact center e desenvolvimento de softwares."
-        // },
+        
         {
           id: "img4",
           source: "./src/assets/images/servicos/04.jpg",
@@ -82,10 +72,7 @@ export default {
           source: "./src/assets/images/servicos/05.jpg",
           title: "Investimento imobiliário",
           text:
-            "Aquisição de imóveis com ou sem geração imediata de renda, incluindo terrenos para projetos de desenvolvimento e para projetos Built To Suit, bem como imóveis com contrato vigente de locação.",
-          subtitle: 'Built to Suit',
-          secondaryText: 
-            "Desenvolvimento e construção de empreendimentos sob medida para atender as necessidades específicas dos clientes por meio de contratos de locação de longo prazo. Empregamos capital próprio para a aquisição e construção do imóvel."
+            "Aplicação de recursos em diversos tipos de investimentos imobiliários, seja no desenvolvimento de empreendimentos ou em imóveis já prontos, como edifícios comerciais, visando o retorno pela exploração de locação, arrendamento, venda do imóvel e demais atividades do setor."
         },
         {
           id: "img6",
@@ -109,21 +96,6 @@ export default {
     };
   },
   methods: {
-    hasMultipleText(isPicture) {            
-        if(this.gallery[this.currentService].id == 'img5') {
-          if(isPicture) {
-            return 'servicos__slider-pic no-shadow-pic';
-          } else {           
-            return 'servicos__slider-text-multiple';
-          }
-        } else {
-          if(isPicture) {
-            return 'servicos__slider-pic';
-          } else {           
-            return 'servicos__slider-text';
-          }
-        }
-    },
     defaultLayout: function() {
       this.currentService = 0;
       this.nextService = 1;
@@ -204,11 +176,9 @@ export default {
       scrollOffset = Math.abs(startY - endY);
       startY += 50;
       if (startY > endY) {
-        this.titleColor = "#000";        
-        this.subtitleColor = "#000";
+        this.titleColor = "#000";
       } else {
-        this.titleColor = "#caa574";        
-        this.subtitleColor = "#fff";
+        this.titleColor = "#caa574";
       }
 
       // console.log(startY);
@@ -219,10 +189,8 @@ export default {
 
       if (offsetWhellY < 0) {
         this.titleColor = "#000";
-        this.subtitleColor = "#000";
       } else {
-        this.titleColor = "#caa574";        
-        this.subtitleColor = "#fff";
+        this.titleColor = "#caa574";
       }
     });
   },

@@ -6,7 +6,7 @@
     position: absolute;
     top: 12%;
     left: 10%;
-    width: 155px;    
+    color: #fff;
     font-size: 30px;
     font-weight: bold;
     line-height: 41px;
@@ -14,18 +14,32 @@
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
     line-height: 100%;
-
+    
   }
-
-  & > .titulo{
+/*--------------------------descrição-------------------------------*/
+  & > .titulo-desc{
     position: absolute;
-    font-size: 0.75em;
-    margin-top: 38%;
+    font-size: 12px;
+    margin-top: 40%;
     margin-left: 10%;
     line-height: 15px;
-    color: #fff;     
+    color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;  
+    
+  }
+/*-----------------------titulo------------------------------------*/
+  & > .titulo{
+    position: absolute;
+    font-size: 17px;
+    margin-top: 33%;
+    margin-left: 10%;
+    line-height: 15px;
+    color: #caa574;
+    font-weight: bold;
+    z-index: 100;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;  
     
   }
 
@@ -66,17 +80,6 @@
     &-text {
       position: fixed;
       bottom: 10%;
-      z-index: -999;
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 14px;
-      width: 280px;
-      left: 9%;
-      background: black;
-    }
-    &-text-multiple {
-      position: fixed;
-      bottom: 2%;
       z-index: -999;
       font-size: 15px;
       font-weight: 300;
@@ -144,11 +147,6 @@
   }
 }
 
-.no-shadow-pic {
-  -webkit-box-shadow: 0 0px 99px #000000;
-  box-shadow: 0 0px 99px #000000;
-}
-
 //Feito para alteração no sass
 .servicos__slider-img {
   .servicos__slider-title {
@@ -169,28 +167,6 @@
       p {
         opacity: 1;
       }
-    }
-    .servicos__slider-subtitle {
-      //position: fixed;
-      left: 10%;
-      margin:15px 0px;
-      font-size: 25px;
-      width: 50%;
-      z-index: 100;
-      opacity: 1;
-      font-weight: normal;
-      p {
-        opacity: 1;
-      }
-    }
-    .servicos__slider-secondary-text {
-      z-index: -999;
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 14px;
-      width: 280px;
-      left: 9%;
-      background: black;
     }
     .servicos__slider-pic {
       width: 105%;

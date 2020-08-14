@@ -1,51 +1,50 @@
 Vue.component("servicos", {
   template: `
-<div id="servicos" class="conteiner-fluid">
+    <div id="servicos" class="conteiner-fluid">
 
-  <div class="row" id="row-servicos">
-    <div class="col-8" id="fist-foto-col">
-        
-        <h3 id="servico-titulo">O que fazemos</h3>
-        <h2 id="servico-subtitulo">Participações Societárias</h2>
+       <div class="row" id="row-servicos">
+          <div class="col-8" id="fist-foto-col">
+              
+              <h3 id="servico-titulo">Participações Societárias</h3>
 
-        <p style="width: 60%" id="servico-desc"> Participação em sociedades de diversos setores,
-        incluindo contact center, financeiro, educação, serviços, tecnologia e imobiliário e desenvolvimento de softwares.</p>
-    </div>
-
-      <div class="col-4" id="slider-servicos-content">
-          
-          <div id="fist-photo" data-title="Assessoria Empresarial" data-description="Assessoria nas áreas financeira, administrativa, folha de pagamento, controladoria/contabilidade, jurídica, pesquisas, suprimentos e compliance através de profissionais com ampla experiência em suas áreas de atuação e da utilização das melhores práticas de mercado."></div>
-          
-          <div id="second-photo" data-title="Contact Center" data-description="Serviço prestado para nichos específicos de mercado através de um atendimento de excelência com uma variedade de canais que potencializam o desempenho dos recursos humanos com aplicação de soluções tecnológicas e proporcionam a melhor interação entre empresa e consumidor."></div>
-        
-          <!--<div id="third-photo" data-title="Participações Societárias" data-description=" “Societário” – financeiro, educação, serviços, tecnologia e imobiliário: Participação em sociedades de diversos setores, incluindo contact center e desenvolvimento de softwares."></div>-->
-          
-          <div id="fourth-photo" data-title="Educação" data-description="Sistema de educação superior a distância credenciado pelas principais redes de ensino do país, nacionais e internacionais, além de gerenciamento de treinamentos de capacitação de equipes e profissionais para o aperfeiçoamento dos serviços prestados."></div>
-          
-          <div id="fifth-photo" data-title="Trade Marketing" data-description="Equipe de abragência nacional especializada em estratégias de maximização  de proposta de valor do produto ou serviço personalizada de acordo com cada negócio através de pesquisa, monitorias para controle de qualidade e merchandising."></div>
-          
-          <div id="sixth-photo" data-title="Investimento Imobiliário:" data-description="Aquisição de imóveis com ou sem geração imediata de renda, incluindo terrenos para projetos de desenvolvimento e para projetos Built To Suit, bem como imóveis com contrato vigente de locação."
-          data-subtitle="Built to Suit" secondary-data-description="Desenvolvimento e construção de empreendimentos sob medida para atender as necessidades específicas dos clientes por meio de contratos de locação de longo prazo. Empregamos capital próprio para a aquisição e construção do imóvel."></div>
-
-          <div id="nav_slider_servicos">
-          <div id="background-setas">
-            <a href="javascript:void(0)" id="prev" v-on:click="servicesNavigate('prev')"><img src="assets/imagens/seta_esquerda.svg" class="setas"></a>
-            <a href="javascript:void(0)" id="prev" v-on:click="servicesNavigate('next')"><img src="assets/imagens/seta_direita.svg" class="setas"></a>
-          </div>
-          <div id="servicos-text-content">
-                <h3 id="servicos-text-titulo">{{title}}</h3>
-                <p id="servicos-text-descricao">{{description}}</p>                     
-                <h3 id="servicos-text-subtitulo">{{subtitle}}</h3>                     
-                <p id="servicos-text-descricao-secundaria">{{secondary}}</p>
+              <p style="width: 60%" id="servico-desc"> Participação em sociedades de diversos setores,
+              incluindo contact center, financeiro, educação, serviços, tecnologia e imobiliário e desenvolvimento de softwares.</p>
           </div>
 
-      </div>
+           <div class="col-4" id="slider-servicos-content">
+                
+                <div id="fist-photo" data-title="Assessoria Empresarial" data-description="Assessoria nas áreas financeira, administrativa, folha de pagamento, controladoria/contabilidade, jurídica, pesquisas, suprimentos e compliance através de profissionais com ampla experiência em suas áreas de atuação e da utilização das melhores práticas de mercado."></div>
+               
+                <div id="second-photo" data-title="Contact Center" data-description="Serviço prestado para nichos específicos de mercado através de um atendimento de excelência com uma variedade de canais que potencializam o desempenho dos recursos humanos com aplicação de soluções tecnológicas e proporcionam a melhor interação entre empresa e consumidor."></div>
+              
+                <!--<div id="third-photo" data-title="Participações Societárias" data-description=" “Societário” – financeiro, educação, serviços, tecnologia e imobiliário: Participação em sociedades de diversos setores, incluindo contact center e desenvolvimento de softwares."></div>-->
+               
+                <div id="fourth-photo" data-title="Educação" data-description="Sistema de educação superior a distância credenciado pelas principais redes de ensino do país, nacionais e internacionais, além de gerenciamento de treinamentos de capacitação de equipes e profissionais para o aperfeiçoamento dos serviços prestados."></div>
+                
+                <div id="fifth-photo" data-title="Trade Marketing" data-description="Equipe de abragência nacional especializada em estratégias de maximização  de proposta de valor do produto ou serviço personalizada de acordo com cada negócio através de pesquisa, monitorias para controle de qualidade e merchandising."></div>
+                
+                <div id="sixth-photo" data-title="Investimento Imobiliário:" data-description="Aquisição de imóveis com ou sem geração imediata de renda, incluindo terrenos para projetos de desenvolvimento e para projetos Built To Suit, bem como imóveis com contrato vigente de locação."
+                data-subtitle="Built to Suit" secondary-data-description="Desenvolvimento e construção de empreendimentos sob medida para atender as necessidades específicas dos clientes por meio de contratos de locação de longo prazo. Empregamos capital próprio para a aquisição e construção do imóvel."></div>
 
-      </div>
+                <div id="nav_slider_servicos">
+                <div id="background-setas">
+                  <a href="javascript:void(0)" id="prev" v-on:click="servicesNavigate('prev')"><img src="assets/imagens/seta_esquerda.svg" class="setas"></a>
+                  <a href="javascript:void(0)" id="prev" v-on:click="servicesNavigate('next')"><img src="assets/imagens/seta_direita.svg" class="setas"></a>
+                </div>
+                <div id="servicos-text-content">
+                     <h3 id="servicos-text-titulo">{{title}}</h3>
+                     <p id="servicos-text-descricao">{{description}}</p>                     
+                     <h3 id="servicos-text-subtitulo">{{subtitle}}</h3>                     
+                     <p id="servicos-text-descricao-secundaria">{{secondary}}</p>
+                </div>
 
+            </div>
+
+           </div>
+
+        </div>
+        <img src="assets/imagens/servicos.svg" id="imagem-servicos" alt="">
     </div>
-    <img src="assets/imagens/servicos.svg" id="imagem-servicos" alt="">
-</div>
       `,
   data() {
     return {

@@ -92,7 +92,7 @@
     }
     &-text-multiple {
       position: fixed;
-      bottom: 2%;
+      bottom: 4%;
       z-index: -999;
       font-size: 15px;
       font-weight: 300;
@@ -161,8 +161,8 @@
 }
 
 .no-shadow-pic {
-  -webkit-box-shadow: 0 0px 99px #000000;
-  box-shadow: 0 0px 99px #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 //Feito para alteração no sass
@@ -189,8 +189,8 @@
     .servicos__slider-subtitle {
       //position: fixed;
       left: 10%;
-      margin:15px 0px;
-      font-size: 25px;
+      margin:10px 0 5px 0;
+      font-size: 18px;
       width: 50%;
       z-index: 100;
       opacity: 1;

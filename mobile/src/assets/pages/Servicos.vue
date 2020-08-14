@@ -21,8 +21,11 @@
         </div>
         <div v-bind:class="hasMultipleText(false)">
           <p>{{img.text}}</p>
-          <h3 class="servicos__slider-subtitle tk-matrix-ii">{{img.subtitle}}</h3>
-          <p class="servicos__slider-secondary-text">{{img.secondaryText}}</p>
+          <template v-if="gallery[currentService].id == 'img5'">
+            <h3 class="servicos__slider-subtitle">{{img.subtitle}}</h3>
+            <p class="servicos__slider-secondary-text">{{img.secondaryText}}</p>
+          </template>
+          
         </div>
       </div>
     </div>

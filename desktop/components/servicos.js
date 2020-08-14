@@ -35,7 +35,7 @@ Vue.component("servicos", {
                 <div id="servicos-text-content">
                      <h3 id="servicos-text-titulo">{{title}}</h3>
                      <p id="servicos-text-descricao">{{description}}</p>                     
-                     <h3 id="servicos-text-subtitulo">{{subtitle}}</h3>                     
+                     <p id="servicos-text-subtitulo" class="subtitulo">{{subtitle}}</p>                     
                      <p id="servicos-text-descricao-secundaria">{{secondary}}</p>
                 </div>
 

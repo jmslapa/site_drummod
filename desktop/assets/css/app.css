@@ -512,6 +512,12 @@
   margin-left: 67%;
   margin-top: 51%;
 }
+#servicos-text-content p.subtitulo {
+  width: 220px;
+  margin-left: 67%;
+  margin-top: 51%;
+  font-size: 1.2em;
+}
 
 #servicos-text-content.multiple-content h3 {
   font-size: 3em;  

@@ -46,7 +46,7 @@ export default {
     return {
        page: {
         name: "servicos",
-        frontTitle: "O que fazemos",
+        frontTitle: "O que fazemos?",
         title: "Participações Societárias",
         desc:
             "Participação em sociedades de diversos setores,incluindo contact center, financeiro, educação, serviços, tecnologia e imobiliário e desenvolvimento de softwares."
